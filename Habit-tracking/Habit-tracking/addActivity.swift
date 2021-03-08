@@ -21,8 +21,10 @@ struct addActivity: View {
     
     @State private var title = ""
     @State private var description = ""
-    @State private var image: Image = Image(systemName: "sun")
+    @State private var image = "sun"
     @State private var choose = 1
+    @ObservedObject var activity: NewActivity
+    @Environment (\.presentationMode) var presentationMode
     
     var images = ["sun", "circle", "square"]
         
@@ -54,14 +56,23 @@ struct addActivity: View {
                     }
                 }
             }
-        }.navigationBarTitle(Text("Add new event"), displayMode: .automatic)
+            }.navigationBarTitle("Add new event")
+            .navigationBarItems(trailing: Button("Save")
+            {
+                if let actualTitle = String?(self.title) {
+                    let item = activityItem(title: actualTitle, desc: self.description, logo: self.image)
+                    self.activity.items.append(item)
+                }
+                self.presentationMode.wrappedValue.dismiss()
+            })
+        }
     }
+    
 }
- 
-}
+
 
 struct addActivity_Previews: PreviewProvider {
     static var previews: some View {
-        addActivity()
+        addActivity(activity: NewActivity())
     }
 }

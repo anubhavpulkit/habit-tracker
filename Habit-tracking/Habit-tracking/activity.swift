@@ -6,12 +6,10 @@
 //
 
 import Foundation
-import SwiftUI
 
-struct activity {
+struct activityItem: Identifiable, Codable {
     var id = UUID()
     var title: String
     var desc: String
-    var logo: Image
-    var completed: Int
+    var logo: String
 }
