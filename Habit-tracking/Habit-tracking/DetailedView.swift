@@ -9,7 +9,7 @@ import SwiftUI
 
 struct DetailedView: View {
     
-    @State private var hours = 0
+    @State private var hours:Float = 0
     
     var body: some View {
         NavigationView{
@@ -25,7 +25,7 @@ struct DetailedView: View {
                     
                 Text("Started on : Date")
                 
-                Stepper("Spend \(hours) hours", value: $hours, in: 0...50)
+                Stepper("Spend \(hours, specifier: "%.2f") hours", value: $hours, in: 0...50, step: 0.25)
                     .padding()
                 
                 Text("Description")
