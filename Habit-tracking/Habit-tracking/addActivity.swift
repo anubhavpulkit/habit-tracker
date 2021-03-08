@@ -28,12 +28,12 @@ struct addActivity: View {
         
     var body: some View {
         NavigationView{
-        Form{
+            Form{
             Section{
                 VStack{
-                text(text: "Title of new activity")
-                TextField("Enter title", text: $title)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    text(text: "Title of new activity")
+                    TextField("Enter title", text: $title)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
                 }
             }
             Section{
@@ -41,7 +41,6 @@ struct addActivity: View {
                     text(text: "Why you want to do this activity?")
                     TextField("What's story behind this activity?", text: $description)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
-                        .padding()
                 }
             }
             Section{

@@ -18,25 +18,27 @@ struct DetailedView: View {
     
                 Image("aldrin")
                     .resizable()
-                    .scaledToFit()
+                    .scaledToFill()
                     .frame(width: geo.size.width * 0.75)
                     .clipShape(Capsule())
                     .padding(.top, 20)
                     
                 Text("Started on : Date")
                 
-                Stepper("\(hours) of hours", value: $hours, in: 0...50)
+                Stepper("Spend \(hours) hours", value: $hours, in: 0...50)
                     .padding()
                 
                 Text("Description")
             
                 ScrollView(.vertical){
                     Text("All about description")
+                        .padding()
                 }
-                .padding()
+                Spacer()
                 }
+                
             }
-            .navigationBarTitle(Text("Name of task"), displayMode: .inline)
+            .navigationBarTitle(Text("Name of task"), displayMode: .automatic)
         }
     }
 }

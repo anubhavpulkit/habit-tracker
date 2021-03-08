@@ -19,6 +19,7 @@ struct ContentView: View {
         NavigationView{
         List{
             ForEach(0..<5){ act in
+                NavigationLink(destination: DetailedView()){
                 HStack{
                     Image("aldrin")
                         .resizable()
@@ -32,7 +33,11 @@ struct ContentView: View {
                     Text("~x hrs")
                         .font(.title2)
                 }
+                .sheet(isPresented: $newActivity){
+                    addActivity()
+                }
             }
+        }
         }
         .navigationBarTitle(Text("Habit-tracking"), displayMode: .automatic)
         .navigationBarItems(trailing: Button(action: {
