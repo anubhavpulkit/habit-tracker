@@ -19,9 +19,20 @@ struct ContentView: View {
         NavigationView{
         List{
             ForEach(0..<5){ act in
-                Text("\(act)")
+                HStack{
+                    Image("aldrin")
+                        .resizable()
+                        .frame(width: 50, height: 40)
+                        .clipShape(Capsule())
+                        .padding(.leading, 2)
+                    Text("\(act)")
+                        .font(.title)
+                        .padding(.leading)
+                    Spacer()
+                    Text("~x hrs")
+                        .font(.title2)
+                }
             }
-            
         }
         .navigationBarTitle(Text("Habit-tracking"), displayMode: .automatic)
         .navigationBarItems(trailing: Button(action: {

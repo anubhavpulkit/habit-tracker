@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E66F15D325F5EDE5000F5821 /* DetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66F15D225F5EDE5000F5821 /* DetailedView.swift */; };
 		E6AAF01625F374BD00333AD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AAF01525F374BD00333AD2 /* AppDelegate.swift */; };
 		E6AAF01825F374BD00333AD2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AAF01725F374BD00333AD2 /* SceneDelegate.swift */; };
 		E6AAF01A25F374BD00333AD2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AAF01925F374BD00333AD2 /* ContentView.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E66F15D225F5EDE5000F5821 /* DetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedView.swift; sourceTree = "<group>"; };
 		E6AAF01225F374BD00333AD2 /* Habit-tracking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Habit-tracking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6AAF01525F374BD00333AD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6AAF01725F374BD00333AD2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				E6AAF01725F374BD00333AD2 /* SceneDelegate.swift */,
 				E6AAF01925F374BD00333AD2 /* ContentView.swift */,
 				E6AAF02E25F37D7F00333AD2 /* addActivity.swift */,
+				E66F15D225F5EDE5000F5821 /* DetailedView.swift */,
 				E6AAF02A25F375E400333AD2 /* activity.swift */,
 				E6AAF01B25F374C000333AD2 /* Assets.xcassets */,
 				E6AAF02025F374C000333AD2 /* LaunchScreen.storyboard */,
@@ -155,6 +158,7 @@
 				E6AAF01825F374BD00333AD2 /* SceneDelegate.swift in Sources */,
 				E6AAF02F25F37D7F00333AD2 /* addActivity.swift in Sources */,
 				E6AAF02B25F375E400333AD2 /* activity.swift in Sources */,
+				E66F15D325F5EDE5000F5821 /* DetailedView.swift in Sources */,
 				E6AAF01A25F374BD00333AD2 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
